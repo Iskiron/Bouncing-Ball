@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.main{
+    height: 100vh;
+    background-color: aqua;
+}
+.sky{
+    height: 60vh;
+}
+.ball{
+height:50px;
+width: 50px;
+border-radius: 50%;
+background-color: yellow;
+position: absolute;
+bottom: 40vh;
+left: 0;
+animation: ballx 3s linear 0s infinite normal , bally 1s ease-out 0s infinite alternate;
+}
+.land{
+    height: 40vh;
+    background-color: rgb(101, 95, 95);
+}
+
+@keyframes bally{
+    from{
+        bottom: 40vh;
+        transform-origin: bottom center;
+    }
+    to{
+        bottom: 90vh;
+        transform-origin: bottom center;
+    }
+}
+
+@keyframes ballx{
+    from{
+        left: 0%;
+    }
+    to{
+        left: 100%;
+    }
+}
